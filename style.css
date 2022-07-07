@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=The+Nautigal:wght@700&display=swap');
+html *
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+li, a, button, h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #e5989b;
+    text-decoration: none;
+}
+
+.main-container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.main-content {
+    background: transparent;
+    border-radius: var(--radius);
+    box-sizing: border-box;
+    box-shadow: 0 0 20px #000000;
+}
+
+.sub-container {
+    background: url(bg.webp) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+nav {
+    top: 0%;
+    left: 50%;
+    display: table;
+    position: relative;
+    transform: translateX(-50%);
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+    border-radius: var(--radius);
+}
+
+nav ul li {
+    color: #e5989b; 
+    padding-right: 8%;
+    display: inline-flex;
+    padding-left: 10%;
+}
+
+body {
+    margin: 0;
+    background-color: #FAF9F6;
+}
+
+.intro-text {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 17%;
+    padding-bottom: 15%;
+    position: inherit;
+    color: white;
+    font-family: 'The Nautigal', cursive;
+    font-size: 60px;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+     -ms-animation: fadein 3s; /* Internet Explorer */
+      -o-animation: fadein 3s; /* Opera < 12.1 */
+         animation: fadein 3s;
+}
+
+
+.container-text {
+    text-align: center;
+    vertical-align: middle;
+    position: inherit;
+    color: black;
+    font-family:'Segoe UI';
+    font-size: 50px;
+    padding: 1rem 0;
+}
+
+.centered-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    opacity: 0.5;
+}
+
+.styled-form {
+    margin: 0 auto;
+    background-color: #1F1F1F;
+    max-width: 880px;
+    border-radius: 25px;
+    color: white;
+}
+
+.form-content {
+    margin: 0 auto;
+    max-width: 580px;
+}
+
+@keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
