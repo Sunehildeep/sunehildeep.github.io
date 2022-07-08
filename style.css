@@ -34,7 +34,6 @@ li, a, button, h4 {
     text-align: center;
     margin: auto;
     padding: 1rem 0;
-    background-color: #6d6875;
 }
 
 .container-text h3 {
@@ -84,11 +83,11 @@ nav {
     position: fixed;
     transform: translateX(-50%);
     width: 100%;
+    transition: margin 200ms;
     margin: 0;
     max-width: 1250px;
     padding: 1rem 0;
     border-radius: var(--radius);
-    transition: margin 200ms;
     transition: background-color 200ms linear;
 }
 
