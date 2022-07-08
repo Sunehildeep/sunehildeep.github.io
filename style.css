@@ -6,12 +6,46 @@ html *
     font-weight: 500;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+div#footer {
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
 li, a, button, h4 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #e5989b;
     text-decoration: none;
+    list-style-type: none;
+}
+
+.container-text ul {
+    border-radius: var(--radius);
+    box-sizing: border-box;
+    box-shadow: 0 0 4px #000000;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    padding: 1rem 0;
+    background-color: #6d6875;
+}
+
+.container-text h3 {
+    line-height: 2.0;
+}
+
+.container-text ul li {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 2.0;
 }
 
 .main-container {
@@ -35,16 +69,27 @@ li, a, button, h4 {
     background-size: cover;
 }
 
+nav.scrolled {
+    background: url(bg.webp) no-repeat center center fixed;
+    opacity: 0.9;
+    transition: background-color 200ms linear;
+    background-size: 100%;
+    transition: margin 200ms;
+    margin-top: -20px;
+  }
+
 nav {
-    top: 0%;
     left: 50%;
     display: table;
-    position: relative;
+    position: fixed;
     transform: translateX(-50%);
     width: 100%;
     margin: 0;
+    max-width: 1250px;
     padding: 1rem 0;
     border-radius: var(--radius);
+    transition: margin 200ms;
+    transition: background-color 200ms linear;
 }
 
 nav ul li {
@@ -80,9 +125,9 @@ body {
     text-align: center;
     vertical-align: middle;
     position: inherit;
-    color: black;
-    font-family:'Segoe UI';
-    font-size: 50px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     padding: 1rem 0;
 }
 
@@ -105,6 +150,7 @@ body {
     margin: 0 auto;
     max-width: 580px;
 }
+
 
 @keyframes fadein {
  from { opacity: 0; }
