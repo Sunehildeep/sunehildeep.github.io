@@ -71,11 +71,10 @@ li, a, button, h4 {
 nav.scrolled {
     background: url(bg.webp) no-repeat center center fixed;
     opacity: 0.9;
-    transition: background-color 200ms linear;
     background-size: 100%;
     transition: margin 200ms;
     margin-top: -20px;
-  }
+}
 
 nav {
     left: 50%;
@@ -83,12 +82,11 @@ nav {
     position: fixed;
     transform: translateX(-50%);
     width: 100%;
-    transition: margin 200ms;
     margin: 0;
+    transition: margin 300ms;
     max-width: 1250px;
     padding: 1rem 0;
     border-radius: var(--radius);
-    transition: background-color 200ms linear;
 }
 
 nav ul li {
